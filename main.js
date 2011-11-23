@@ -72,7 +72,7 @@ exports.main = function() {
     hostCountBronze: {
         id: "hostCountBronze",
         obs: "hostCountBronze",
-        message: "Nice job, 10 domains in a three minute timespan.",
+        message: "Nice job, 10 domains in a 3 minute timespan.",
         name: "Frequent flyer"
     },
     hostCountSilver: {
