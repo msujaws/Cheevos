@@ -36,10 +36,6 @@ ul {
   border: 1px solid #c6c6c6;
 }
 
-.inline{
-display:inline;
-}
-
 li {
   vertical-align: top;
   -moz-box-sizing: border-box;
