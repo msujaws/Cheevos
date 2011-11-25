@@ -1,37 +1,64 @@
 body {
-  background-color: white;
-  color: black;
   font-family: Helvetica, Arial, sans-serif;
   margin: 0 auto;
+  padding: 0;
 }
 h1 {
   margin: 0;
+  padding: 0;
   text-shadow: 0 0 10px goldenrod;
 }
 h2 {
   margin-top: 0;
+  padding: 0;
 }
 p {
   margin-bottom: 0;
+  padding: 0;
 }
+
+.message-wrapper {
+}
+
+.message {
+  width: 50%;
+}
+
 ul {
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   list-style-type: square;
 }
 #top-bar {
   background-color: #ECECEC;
   position: relative;
+  padding: 0 0 5px 5px;
+  border: 1px solid #c6c6c6;
 }
-.achieved {
-  background-color: #5080D8;
+
+.inline {
+  display: inline;
 }
+
 li {
+  vertical-align: top;
   -moz-box-sizing: border-box;
-  padding: 5px;
+  padding: 15px;
   background-color: #f8f8f8;
   outline: 1px solid #c6c6c6;
   display: inline-block;
+  color: silver;
+  margin: 0;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.achieved {
+  background-color: #7da2e3;
+  color: white;
+  -moz-transition: background-color 200ms linear;
 }
 
 li:hover {
@@ -51,17 +78,24 @@ li:hover {
   right: 10px;
 }
 
-@media all and (min-width: 1500px) {
+.achieved:hover {
+  background-color: #5080D8;
+}
+
+@media all and (min-width: 1200px) {
   body {
-    width: 1500px;
+    width: 1000px;
   }
   li {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
+  }
+  h3 {
+    width: 200px;
   }
 }
 
-@media all and (max-width: 1499px) and (min-width: 800px) {
+@media all and (max-width: 1199px) and (min-width: 900px) {
   body {
     width: 800px;
   }
@@ -69,24 +103,40 @@ li:hover {
     width: 200px;
     height: 200px;
   }
+  h3 {
+    width: 150px;
+  }
+  li > p {
+    width: 150px;
+  }
 }
 
-@media all and (max-width: 799px) and (min-width: 450px) {
+@media all and (max-width: 899px) and (min-width: 550px) {
   body {
     width: 450px;
   }
   li {
     width: 225px;
-    height: 150px;
+    height: 140px;
   }
 }
 
-@media all and (max-width: 449px) {
+@media all and (max-width: 549px) and (min-width: 350px) {
+  body {
+    width: 325px;
+  }
+  li {
+    width: 325px;
+    min-height: 100px;
+  }
+}
+
+@media all and (max-width: 349px) {
   body {
     width: 100%;
   }
   li {
     display: block;
-    height: 50px;
+    min-height: 80px;
   }
 }
