@@ -35,24 +35,17 @@ li {
 }
 
 .achieved {
-  background-color: #5080D8;
+  background-color: #7da2e3;
   color: white;
+  -moz-transition: background-color 200ms linear;
 }
 
 li:hover {
-  background-color:white;
+  background-color: white;
 }
 
 .achieved:hover {
-  -webkit-transition-property: background-color;
-  -moz-transition-property: background-color;
-  -o-transition-property: background-color;
-  transition-property: background-color;
-  background-color:#7da2e3;
-  -o-transition:background-color 500ms linear;
-  -webkit-transition:background-color 500ms linear;
-  -moz-transition:background-color 500ms linear;
-  transition:background-color 500ms linear;
+  background-color: #5080D8;
 }
 
 @media all and (min-width: 1200px) {
