@@ -43,7 +43,7 @@ li:hover {
   }
   li {
     width: 300px;
-	height: 300px;
+    height: 300px;
   }
 }
 
@@ -53,29 +53,26 @@ li:hover {
   }
   li {
     width: 200px;
-	height: 200px;
+    height: 200px;
   }
 }
 
 @media all and (max-width: 799px) and (min-width: 450px) {
-  body{
+  body {
     width: 450px;
   }
   li {
     width: 225px;
-	height: 150px;
+    height: 150px;
   }
 }
 
-@media all and (max-width: 449px) {	
-  body{
+@media all and (max-width: 449px) {
+  body {
     width: 100%;
   }
   li {
     display: block;
-	height: 50px;
+    height: 50px;
   }
 }
-	
-
-
