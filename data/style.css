@@ -16,6 +16,15 @@ p {
   margin-bottom: 0;
   padding: 0;
 }
+
+.message-wrapper{
+
+}
+
+.message {
+width:50%;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -23,13 +32,18 @@ ul {
 }
 #top-bar {
   background-color: #ECECEC;
-  padding: 0;
+  padding: 0 0 5px 5px;
   border: 1px solid #c6c6c6;
 }
 
+.inline{
+display:inline;
+}
+
 li {
+  vertical-align: top;
   -moz-box-sizing: border-box;
-  padding: 5px;
+  padding: 15px;
   background-color: #f8f8f8;
   outline: 1px solid #c6c6c6;
   display: inline-block;
@@ -66,9 +80,6 @@ li:hover {
   h3 {
     width: 200px;
   }
-  li > p {
-    width: 200px;
-  }
 }
 
 @media all and (max-width: 1199px) and (min-width: 900px) {
@@ -99,11 +110,11 @@ li:hover {
 
 @media all and (max-width: 549px) and (min-width: 350px) {
   body {
-    width: 250px;
+    width: 325px;
   }
   li {
-    width: 250px;
-	  min-height: 40px;
+    width: 325px;
+	  min-height: 100px;
   }
 }
 
@@ -113,6 +124,6 @@ li:hover {
   }
   li {
     display: block;
-	  min-height: 40px;
+	  min-height: 80px;
   }
 }
