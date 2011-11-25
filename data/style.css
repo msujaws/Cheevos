@@ -21,6 +21,7 @@ ul {
 }
 #top-bar {
   background-color: #ECECEC;
+  position: relative;
 }
 .achieved {
   background-color: #5080D8;
@@ -35,6 +36,19 @@ li {
 
 li:hover {
   background-color: white;
+}
+
+#share {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#twitterLink {
+  display: none;
+  position: absolute;
+  top: 35px;
+  right: 10px;
 }
 
 @media all and (min-width: 1500px) {
