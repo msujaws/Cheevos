@@ -71,22 +71,22 @@ li:hover {
   }
   li {
     width: 200px;
-	height: 200px;
+    height: 200px;
   }
 }
 
 @media all and (max-width: 899px) and (min-width: 550px) {
-  body{
+  body {
     width: 450px;
   }
   li {
     width: 225px;
-	height: 150px;
+    height: 150px;
   }
 }
 
-@media all and (max-width: 549px) and (min-width: 300px) {
-  body{
+@media all and (max-width: 549px) and (min-width: 350px) {
+  body {
     width: 250px;
   }
   li {
@@ -95,16 +95,12 @@ li:hover {
   }
 }
 
-@media all and (max-width: 299px) and (min-width: 50px) {	
-  body{
+@media all and (max-width: 349px) {	
+  body {
     width: 100%;
   }
   li {
     display: block;
-	width: 100%;
 	height: 50px;
   }
 }
-	
-
-
