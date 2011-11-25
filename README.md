@@ -7,9 +7,9 @@ Cheevos is an early stage addon for Firefox that makes learning about different 
 Patches welcome :)
 
 Technology used:
-Mozilla Firefox Add-on SDK
-JavaScript
-CSS
+* Mozilla Firefox Add-on SDK
+* JavaScript
+* CSS
 
 AUTHORS:
-Jared Wein <weinjared@gmail.com>
+* Jared Wein <weinjared@gmail.com>
