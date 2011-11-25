@@ -2,7 +2,8 @@ body {
   background-color: white;
   color: silver;
   font-family: Helvetica, Arial, sans-serif;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 h1 {
   margin: 0;
@@ -27,88 +28,26 @@ ul {
   list-style-type: square;
 }
 
-.main-container {
-  margin: 0 auto;
-  width: 1200px;
-}
-
-.cheevo {
-  color: black;
+#top-bar {
+  background-color: #ECECEC;
+  border: 1px solid #BDBDBD;
+  padding: 3px 0 3px 6px;
 }
 
 .achieved {
-  color: goldenrod;
-}
-
-.cheevo, .achieved {
-  list-style: none;
-  font-size: 13px;
-  text-shadow: 0 1px rgba(255, 255, 255, 0.5);
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 20px;
-  margin-left: 5%;
-}
-
-.cheevo:hover {
-  color: goldenrod;
-  cursor: pointer;
-}
-
-.main-content {
-  top: 0px;
-  left: 0px;
-  margin-left: 240px;
-  width: 730px;
-  min-height: 100%;
-  position: relative;
-  display: inline-block;
-  border-left: 1px solid #BDBDBD;
-}
-
-.top-bar {
-  position: relative;
-  height: 39px;
-  width: 713px;
-  background-color: #ECECEC;
-  border-bottom: 1px solid #BDBDBD;
-  border-right: 1px solid #BDBDBD;
-  padding: 0;
-  z-index: 100;
-  top: 0px;
-  left: 0px;
-  padding-left: 6px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
-
-.inline {
-  display: inline;
-}
-
-.cheevo-blocks {
-  margin-top: 40px;
-  position: relative;
-}
-
-.cheevo-content {
-  background-color: #f8f8f8;
-  border-bottom: 1px solid #c6c6c6;
-  border-right: 1px solid #c6c6c6;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.achieved-two {
   background-color: #5080D8;
 }
 
-.cheevo-block {
+li {
+  -moz-box-sizing: border-box;
   padding: 5px;
-  width: 229px;
-  height: 199px;
+  width: 240px;
+  height: 148px;
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  display: inline-block;
 }
 
-.cheevo-block:hover {
+li:hover {
   background-color: white;
 }
