@@ -7,6 +7,7 @@ body,h1,h2,p,ul {
 /*top bar */
 #top-bar {
   background-color: #ECECEC;
+  position: relative;
   padding: 0 0 5px 5px;
   border: 1px solid #c6c6c6;
 }
@@ -43,27 +44,22 @@ body,h1,h2,p,ul {
   background-color: white;
 }
 
-.message{
-  -moz-transition-delay: 400ms;
-  -moz-transition-time-function: ease;
-  -moz-transition-duration: 200ms;
-}
 
 .awards{
-  opacity:0;
-  position: absolute;
-  top:10px;
-  -moz-transition-time-function: ease;
-  -moz-transition-duration: 400ms;
   list-style:none;
-  left:0;
-  width:100%;
+  width:60%;
+  position:absolute;
+  bottom:10px;
+  
 }
 
 .bronze, .silver, .gold {
-width:100%;
-height:30px;
+width:20%;
+height:20px;
 color:white;
+position:relative;
+display: inline-block;
+float:right;
 }
 
 .bronze {
@@ -78,13 +74,11 @@ background-color:#C0C0C0;
 background-color:#D4A017;
 }
 
-.cheevo-block:hover .awards {
-  -moz-transition-delay: 600ms;
-  opacity:1;
-}
-
-.cheevo-block:hover  h3, .cheevo-block:hover .message {
-   opacity: 0;
+#twitterLink,
+.twitter-share-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 .achieved:hover {
@@ -127,16 +121,16 @@ background-color:#D4A017;
   }
   .cheevo-block {
     width: 325px;
-	  min-height: 100px;
+    min-height: 100px;
   }
 }
 
-@media all and (max-width: 349px) {	
+@media all and (max-width: 349px) {
   body {
     width: 100%;
   }
   .cheevo-block {
     display: block;
-	  min-height: 80px;
+    min-height: 80px;
   }
 }
