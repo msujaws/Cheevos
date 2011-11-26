@@ -1,34 +1,10 @@
-body {
+body,h1,h2,p,ul {
   font-family: Helvetica, Arial, sans-serif;
   margin: 0 auto;
   padding: 0;
 }
-h1 {
-  margin: 0;
-  padding: 0;
-  text-shadow: 0 0 10px goldenrod;
-}
-h2 {
-  margin-top: 0;
-  padding: 0;
-}
-p {
-  margin-bottom: 0;
-  padding: 0;
-}
 
-.message-wrapper {
-}
-
-.message {
-  width: 50%;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: square;
-}
+/*top bar */
 #top-bar {
   background-color: #ECECEC;
   position: relative;
@@ -36,11 +12,8 @@ ul {
   border: 1px solid #c6c6c6;
 }
 
-.inline {
-  display: inline;
-}
-
-li {
+/*cheevo blocks*/
+.cheevo-block {
   vertical-align: top;
   -moz-box-sizing: border-box;
   padding: 15px;
@@ -49,9 +22,15 @@ li {
   display: inline-block;
   color: silver;
   margin: 0;
+  -moz-transition: background-color 200ms linear;
+  cursor: pointer;
+  position: relative;
 }
 
-h3 {
+.name {
+  -moz-transition-delay: 400ms;
+  -moz-transition-time-function: ease;
+  -moz-transition-duration: 200ms;
   margin-top: 0;
 }
 
@@ -61,8 +40,38 @@ h3 {
   -moz-transition: background-color 200ms linear;
 }
 
-li:hover {
+.cheevo-block:hover {
   background-color: white;
+}
+
+
+.awards{
+  list-style:none;
+  width:60%;
+  position:absolute;
+  bottom:10px;
+  
+}
+
+.bronze, .silver, .gold {
+width:20%;
+height:20px;
+color:white;
+position:relative;
+display: inline-block;
+float:right;
+}
+
+.bronze {
+background-color:#A67D3D;
+}
+
+.silver {
+background-color:#C0C0C0;
+}
+
+.gold {
+background-color:#D4A017;
 }
 
 #twitterLink,
@@ -80,12 +89,9 @@ li:hover {
   body {
     width: 1000px;
   }
-  li {
+  .cheevo-block {
     width: 250px;
     height: 250px;
-  }
-  h3 {
-    width: 200px;
   }
 }
 
@@ -93,15 +99,9 @@ li:hover {
   body {
     width: 800px;
   }
-  li {
+  .cheevo-block {
     width: 200px;
     height: 200px;
-  }
-  h3 {
-    width: 150px;
-  }
-  li > p {
-    width: 150px;
   }
 }
 
@@ -109,7 +109,7 @@ li:hover {
   body {
     width: 450px;
   }
-  li {
+  .cheevo-block {
     width: 225px;
     height: 140px;
   }
@@ -119,7 +119,7 @@ li:hover {
   body {
     width: 325px;
   }
-  li {
+  .cheevo-block {
     width: 325px;
     min-height: 100px;
   }
@@ -129,7 +129,7 @@ li:hover {
   body {
     width: 100%;
   }
-  li {
+  .cheevo-block {
     display: block;
     min-height: 80px;
   }
