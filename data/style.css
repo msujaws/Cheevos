@@ -1,4 +1,4 @@
-body,h1,h2,p,ul {
+body, h1, h2, p, ul {
   font-family: Helvetica, Arial, sans-serif;
   margin: 0 auto;
   padding: 0;
@@ -23,7 +23,6 @@ body,h1,h2,p,ul {
   color: silver;
   margin: 0;
   -moz-transition: background-color 200ms linear;
-  cursor: pointer;
   position: relative;
 }
 
@@ -45,37 +44,35 @@ body,h1,h2,p,ul {
 }
 
 
-.awards{
-  list-style:none;
-  width:60%;
-  position:absolute;
-  bottom:10px;
-  
+.awards {
+  list-style: none;
+  width: 60%;
+  position: absolute;
+  bottom: 10px;
 }
 
 .bronze, .silver, .gold {
-width:20%;
-height:20px;
-color:white;
-position:relative;
-display: inline-block;
-float:right;
+  width: 20%;
+  height: 20px;
+  color: white;
+  position: relative;
+  display: inline-block;
+  float: right;
 }
 
 .bronze {
-background-color:#A67D3D;
+  background-color: #A67D3D;
 }
 
 .silver {
-background-color:#C0C0C0;
+  background-color: #C0C0C0;
 }
 
 .gold {
-background-color:#D4A017;
+  background-color: #D4A017;
 }
 
-#twitterLink,
-.twitter-share-button {
+#twitterLink, .twitter-share-button {
   position: absolute;
   top: 10px;
   right: 10px;
