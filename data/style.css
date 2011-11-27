@@ -1,6 +1,20 @@
-body, h1, h2, p, ul {
+body {
   font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
   margin: 0 auto;
+  padding: 0;
+}
+
+#cheevo-h1 {
+  margin-bottom: 0;
+}
+
+#cheevo-h2 {
+  margin-top: 0;
+}
+
+ul {
+  margin: 0;
   padding: 0;
 }
 
@@ -16,13 +30,13 @@ body, h1, h2, p, ul {
 .cheevo-block {
   vertical-align: top;
   -moz-box-sizing: border-box;
-  padding: 15px;
-  background-color: #f8f8f8;
+  padding: 10px;
+  background:-moz-linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5) 50%), -moz-linear-gradient(-moz-dialog, -moz-dialog);
   outline: 1px solid #c6c6c6;
   display: inline-block;
   color: silver;
   margin: 0;
-  -moz-transition: background-color 200ms linear;
+  -moz-transition: background 800ms linear;
   position: relative;
 }
 
@@ -33,14 +47,39 @@ body, h1, h2, p, ul {
   margin-top: 0;
 }
 
-.achieved {
-  background-color: #7da2e3;
+.message {
+  padding:5px 12px;
+  color: black;
+  -moz-transition: background-color 200ms linear;  
+}
+
+.unachieved > h3, .awards-unachieved > h3 {
+  padding:5px 12px;
+  color: black;
+  -moz-transition: background-color 200ms linear;
+  border-color: #2D53AF;
+  background-repeat: no-repeat;
+  background-position: 90%;
+  background-image: -moz-linear-gradient(center bottom , rgba(26, 26, 26, 2) 0px, transparent 0px), -moz-linear-gradient(transparent, rgba(114, 114, 114, 0.1) 1px, rgba(81, 81, 81, 0.2) 80%), -moz-linear-gradient(rgb(207, 219, 236), rgb(207, 219, 236));
+}
+
+.achieved > h3, .awards-achieved > h3 {
+  padding:5px 12px;
   color: white;
   -moz-transition: background-color 200ms linear;
+  border-color: #2D53AF;
+  background-repeat: no-repeat;
+  background-position: 90%;
+  background-image: url(tick.png), -moz-linear-gradient(top,#5689DB 0%,#4D7BD6 100%);
+}
+
+.check {
+  float:right;
+  padding-top:5px;
 }
 
 .cheevo-block:hover {
-  background-color: white;
+ background: white;
 }
 
 
@@ -48,10 +87,12 @@ body, h1, h2, p, ul {
   list-style: none;
   width: 60%;
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
+  right: 5px;
+  display: block;
 }
 
-.bronze, .silver, .gold {
+.bronze, .silver, .gold, .bronze-unachieved, .silver-unachieved, .gold-unachieved, .bronze-achieved, .silver-achieved, .gold-achieved {
   width: 20%;
   height: 20px;
   color: white;
@@ -60,16 +101,46 @@ body, h1, h2, p, ul {
   float: right;
 }
 
-.bronze {
-  background-color: #A67D3D;
+.achieved  > div .bronze {
+  background: url(award_star_bronze_1.png) no-repeat right;
 }
 
-.silver {
-  background-color: #C0C0C0;
+.achieved  > div .silver {
+  background: url(award_star_silver_1.png) no-repeat right;
 }
 
-.gold {
-  background-color: #D4A017;
+.achieved  > div .gold {
+  background: url(award_star_gold_1.png) no-repeat right;
+}
+
+.unachieved  > div .bronze {
+  background: gray;
+}
+.unachieved > div > .silver {
+  background: gray;
+}
+.unachieved > div > .gold {
+  background: gray;
+}
+
+.awards-unachieved > ol > .bronze-unachieved {
+  background: gray;
+}
+.awards-unachieved > ol > .silver-unachieved {
+  background: gray;
+}
+.awards-unachieved > ol > .gold-unachieved {
+  background: gray;
+}
+
+.awards-unachieved > ol > .bronze-achieved {
+  background: url(award_star_bronze_1.png) no-repeat right;
+}
+.awards-unachieved > ol > .silver-achieved {
+  background: url(award_star_silver_1.png) no-repeat right;
+}
+.awards-unachieved > ol > .gold-achieved {
+  background: url(award_star_gold_1.png) no-repeat right;
 }
 
 #twitterLink, .twitter-share-button {
@@ -78,9 +149,6 @@ body, h1, h2, p, ul {
   right: 10px;
 }
 
-.achieved:hover {
-  background-color: #5080D8;
-}
 
 @media all and (min-width: 1200px) {
   body {
@@ -94,37 +162,40 @@ body, h1, h2, p, ul {
 
 @media all and (max-width: 1199px) and (min-width: 900px) {
   body {
-    width: 800px;
+    width: 801px;
   }
   .cheevo-block {
-    width: 200px;
-    height: 200px;
+    width: 267px;
+    height: 267px;
   }
 }
 
-@media all and (max-width: 899px) and (min-width: 550px) {
+@media all and (max-width: 899px) and (min-width: 620px) {
   body {
-    width: 450px;
+    width: 570px;
+    font-size: 14px;
   }
   .cheevo-block {
-    width: 225px;
-    height: 140px;
+    width: 285px;
+    height: 250px;
   }
 }
 
-@media all and (max-width: 549px) and (min-width: 350px) {
+@media all and (max-width: 619px) and (min-width: 401px) {
   body {
-    width: 325px;
+    width: 375px;
+    font-size: 12px;
   }
   .cheevo-block {
-    width: 325px;
+    width: 375px;
     min-height: 100px;
   }
 }
 
-@media all and (max-width: 349px) {
+@media all and (max-width: 400px) {
   body {
     width: 100%;
+    font-size: 12px;
   }
   .cheevo-block {
     display: block;
