@@ -77,11 +77,6 @@ ul {
                     -moz-linear-gradient(top,#5689DB 0%,#4D7BD6 100%);
 }
 
-.check {
-  float: right;
-  padding-top: 5px;
-}
-
 .cheevo-block:hover {
   -moz-transition-delay: 400ms;
   -moz-transition-time-function: ease;
