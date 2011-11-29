@@ -3,6 +3,8 @@ body {
   font-size: 16px;
   margin: 0 auto;
   padding: 0;
+  -moz-transition-time-function: ease;
+  -moz-transition-duration: 1000ms;
 }
 
 #cheevo-h1 {
@@ -36,8 +38,9 @@ ul {
   display: inline-block;
   color: silver;
   margin: 0;
-  -moz-transition: background 800ms linear;
   position: relative;
+  -moz-transition-time-function: ease;
+  -moz-transition-duration: 600ms;
 }
 
 .name {
@@ -56,7 +59,6 @@ ul {
 .unachieved > h3, .awards-unachieved > h3 {
   padding:5px 12px;
   color: black;
-  -moz-transition: background-color 200ms linear;
   border-color: #2D53AF;
   background-repeat: no-repeat;
   background-position: 90%;
@@ -66,7 +68,6 @@ ul {
 .achieved > h3, .awards-achieved > h3 {
   padding:5px 12px;
   color: white;
-  -moz-transition: background-color 200ms linear;
   border-color: #2D53AF;
   background-repeat: no-repeat;
   background-position: 90%;
@@ -79,7 +80,10 @@ ul {
 }
 
 .cheevo-block:hover {
- background: white;
+  -moz-transition-delay: 400ms;
+  -moz-transition-time-function: ease;
+  -moz-transition-duration: 200ms;
+  background:-moz-linear-gradient(rgba(250, 250, 250, 1), rgba(255, 255, 255, 1) 50%), -moz-linear-gradient(-moz-dialog, -moz-dialog);
 }
 
 
@@ -160,7 +164,7 @@ ul {
   }
 }
 
-@media all and (max-width: 1199px) and (min-width: 900px) {
+@media all and (max-width: 1200px) and (min-width: 900px) {
   body {
     width: 801px;
   }
@@ -170,7 +174,7 @@ ul {
   }
 }
 
-@media all and (max-width: 899px) and (min-width: 620px) {
+@media all and (max-width: 900px) and (min-width: 620px) {
   body {
     width: 570px;
     font-size: 14px;
@@ -181,7 +185,7 @@ ul {
   }
 }
 
-@media all and (max-width: 619px) and (min-width: 401px) {
+@media all and (max-width: 620px) and (min-width: 400px) {
   body {
     width: 375px;
     font-size: 12px;
