@@ -24,7 +24,7 @@ ul {
 #top-bar {
   background-color: #ECECEC;
   position: relative;
-  padding: 0 0 5px 5px;
+  padding-left:10px;
   border: 1px solid #c6c6c6;
 }
 
@@ -156,7 +156,7 @@ ul {
 
 @media all and (min-width: 1200px) {
   body {
-    width: 1000px;
+    width: 1023px;
   }
   .cheevo-block {
     width: 250px;
@@ -166,7 +166,7 @@ ul {
 
 @media all and (max-width: 1200px) and (min-width: 900px) {
   body {
-    width: 801px;
+    width: 823px;
   }
   .cheevo-block {
     width: 267px;
@@ -176,7 +176,7 @@ ul {
 
 @media all and (max-width: 900px) and (min-width: 620px) {
   body {
-    width: 570px;
+    width: 592px;
     font-size: 14px;
   }
   .cheevo-block {
@@ -187,7 +187,7 @@ ul {
 
 @media all and (max-width: 620px) and (min-width: 400px) {
   body {
-    width: 375px;
+    width: 397px;
     font-size: 12px;
   }
   .cheevo-block {
@@ -204,5 +204,8 @@ ul {
   .cheevo-block {
     display: block;
     min-height: 80px;
+  }
+  #top-bar{
+    padding-left:0px;
   }
 }
