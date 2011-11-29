@@ -4,7 +4,7 @@ body {
   margin: 0 auto;
   padding: 0;
   -moz-transition-time-function: ease;
-  -moz-transition-duration: 500ms;
+  -moz-transition-duration: 1000ms;
 }
 
 #cheevo-h1 {
@@ -156,7 +156,7 @@ ul {
 
 @media all and (min-width: 1200px) {
   body {
-    width: 1021px;
+    width: 1023px;
   }
   .cheevo-block {
     width: 250px;
