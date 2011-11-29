@@ -57,7 +57,7 @@ ul {
   -moz-transition: background-color 200ms linear;
 }
 
-.unachieved > h3, .awards-unachieved > h3 {
+.cheevo-block > h3 {
   padding: 5px 12px;
   color: black;
   border-color: #2D53AF;
@@ -66,7 +66,7 @@ ul {
                     -moz-linear-gradient(rgb(207, 219, 236), rgb(207, 219, 236));
 }
 
-.achieved > h3, .awards-achieved > h3 {
+.achieved > h3 {
   padding: 5px 12px;
   color: white;
   border-color: #2D53AF;
@@ -91,53 +91,46 @@ ul {
 }
 
 .awards {
-  list-style: none;
-  width: 60%;
   position: absolute;
   bottom: 5px;
   right: 5px;
-  display: block;
+}
+
+.awards > li {
+  display: inline-block;
 }
 
 .bronze, .silver, .gold,
-.bronze-unachieved, .silver-unachieved, .gold-unachieved,
-.bronze-achieved, .silver-achieved, .gold-achieved {
-  width: 20%;
-  height: 20px;
-  color: white;
-  position: relative;
-  display: inline-block;
-  float: right;
+.achieved {
+  width: 16px;
+  height: 16px;
 }
 
-.achieved > div .bronze,
-.unachieved > div .bronze,
-.awards-unachieved > ol > .bronze-achieved,
-.awards-unachieved > ol > .bronze-unachieved {
+div.bronze, div.silver, div.gold {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.bronze {
   background: url(award_star_bronze_1.png) no-repeat right;
 }
 
-.achieved > div .silver,
-.unachieved > div > .silver,
-.awards-unachieved > ol > .silver-achieved,
-.awards-unachieved > ol > .silver-unachieved {
+.silver {
   background: url(award_star_silver_1.png) no-repeat right;
 }
 
-.achieved > div .gold,
-.unachieved > div > .gold,
-.awards-unachieved > ol > .gold-achieved,
-.awards-unachieved > ol > .gold-unachieved {
+.gold {
   background: url(award_star_gold_1.png) no-repeat right;
 }
 
-.unachieved > div .bronze,
-.awards-unachieved > ol > .bronze-unachieved,
-.unachieved > div > .silver,
-.awards-unachieved > ol > .silver-unachieved,
-.unachieved > div > .gold,
-.awards-unachieved > ol > .gold-unachieved {
+.bronze, .silver, .gold {
   filter: url(cheevo.html#desaturate);
+}
+
+.achieved,
+.achieved > :-moz-any(.bronze, .silver, .gold) {
+  filter: none;
 }
 
 #twitterLink, .twitter-share-button {
