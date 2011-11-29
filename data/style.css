@@ -1,10 +1,21 @@
+html {
+  background-color: #fff;
+}
+
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   margin: 0 auto;
-  padding: 0;
+  padding: 10px;
   -moz-transition-time-function: ease;
   -moz-transition-duration: 1000ms;
+}
+
+#wrapper {
+  position: relative;
+  background-color: #ececec;
+  border: 1px solid #c6c6c6;
+  padding-bottom: 10px;
 }
 
 #cheevo-h1 {
@@ -15,25 +26,24 @@ body {
   margin-top: 0;
 }
 
-ul {
+#cheevo-h1,
+#cheevo-h2,
+#cheevo-message,
+.cheevo-block {
+  text-align: left;
+}
+
+#cheevo-blocks {
   margin: 0;
   padding: 0;
 }
 
-/*top bar */
-#wrapper{
-  background-color: #ECECEC;
-  position: relative;
-  padding-left:10px;
-  border: 1px solid #c6c6c6;
-}
-
-/*cheevo blocks*/
 .cheevo-block {
   vertical-align: top;
   -moz-box-sizing: border-box;
   padding: 10px;
-  background:-moz-linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5) 50%), -moz-linear-gradient(-moz-dialog, -moz-dialog);
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5) 50%),
+                    -moz-linear-gradient(-moz-dialog, -moz-dialog);
   outline: 1px solid #c6c6c6;
   display: inline-block;
   color: silver;
@@ -51,100 +61,80 @@ ul {
 }
 
 .message {
-  padding:5px 12px;
+  padding: 5px 12px;
   color: black;
-  -moz-transition: background-color 200ms linear;  
+  -moz-transition: background-color 200ms linear;
 }
 
-.unachieved > h3, .awards-unachieved > h3 {
-  padding:5px 12px;
+.cheevo-block > h3 {
+  padding: 5px 12px;
   color: black;
   border-color: #2D53AF;
-  background-repeat: no-repeat;
-  background-position: 90%;
-  background-image: -moz-linear-gradient(center bottom , rgba(26, 26, 26, 2) 0px, transparent 0px), -moz-linear-gradient(transparent, rgba(114, 114, 114, 0.1) 1px, rgba(81, 81, 81, 0.2) 80%), -moz-linear-gradient(rgb(207, 219, 236), rgb(207, 219, 236));
+  background-image: -moz-linear-gradient(center bottom , rgba(26, 26, 26, 2) 0px, transparent 0px),
+                    -moz-linear-gradient(transparent, rgba(114, 114, 114, 0.1) 1px, rgba(81, 81, 81, 0.2) 80%),
+                    -moz-linear-gradient(rgb(207, 219, 236), rgb(207, 219, 236));
 }
 
-.achieved > h3, .awards-achieved > h3 {
-  padding:5px 12px;
+.achieved > h3 {
+  padding: 5px 12px;
   color: white;
   border-color: #2D53AF;
+  border-radius: 2.5px;
   background-repeat: no-repeat;
-  background-position: 90%;
-  background-image: url(tick.png), -moz-linear-gradient(top,#5689DB 0%,#4D7BD6 100%);
-}
-
-.check {
-  float:right;
-  padding-top:5px;
+  background-position: -moz-calc(100% - 16px), center;
+  background-image: url(tick.png),
+                    -moz-linear-gradient(top,#5689DB 0%,#4D7BD6 100%);
 }
 
 .cheevo-block:hover {
   -moz-transition-delay: 400ms;
   -moz-transition-time-function: ease;
   -moz-transition-duration: 200ms;
-  background:-moz-linear-gradient(rgba(250, 250, 250, 1), rgba(255, 255, 255, 1) 50%), -moz-linear-gradient(-moz-dialog, -moz-dialog);
+  background-image: -moz-linear-gradient(rgba(250, 250, 250, 1), rgba(255, 255, 255, 1) 50%),
+                    -moz-linear-gradient(-moz-dialog, -moz-dialog);
 }
 
-
 .awards {
-  list-style: none;
-  width: 60%;
   position: absolute;
   bottom: 5px;
   right: 5px;
-  display: block;
 }
 
-.bronze, .silver, .gold, .bronze-unachieved, .silver-unachieved, .gold-unachieved, .bronze-achieved, .silver-achieved, .gold-achieved {
-  width: 20%;
-  height: 20px;
-  color: white;
-  position: relative;
+.awards > li {
   display: inline-block;
-  float: right;
 }
 
-.achieved  > div .bronze {
+.bronze, .silver, .gold,
+.achieved {
+  width: 16px;
+  height: 16px;
+}
+
+div.bronze, div.silver, div.gold {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.bronze {
   background: url(award_star_bronze_1.png) no-repeat right;
 }
 
-.achieved  > div .silver {
+.silver {
   background: url(award_star_silver_1.png) no-repeat right;
 }
 
-.achieved  > div .gold {
+.gold {
   background: url(award_star_gold_1.png) no-repeat right;
 }
 
-.unachieved  > div .bronze {
-  background: gray;
-}
-.unachieved > div > .silver {
-  background: gray;
-}
-.unachieved > div > .gold {
-  background: gray;
+.bronze, .silver, .gold {
+  filter: url(cheevo.html#desaturate);
 }
 
-.awards-unachieved > ol > .bronze-unachieved {
-  background: gray;
-}
-.awards-unachieved > ol > .silver-unachieved {
-  background: gray;
-}
-.awards-unachieved > ol > .gold-unachieved {
-  background: gray;
-}
-
-.awards-unachieved > ol > .bronze-achieved {
-  background: url(award_star_bronze_1.png) no-repeat right;
-}
-.awards-unachieved > ol > .silver-achieved {
-  background: url(award_star_silver_1.png) no-repeat right;
-}
-.awards-unachieved > ol > .gold-achieved {
-  background: url(award_star_gold_1.png) no-repeat right;
+.achieved,
+.achieved > :-moz-any(.bronze, .silver, .gold) {
+  filter: none;
 }
 
 #twitterLink, .twitter-share-button {
@@ -166,7 +156,7 @@ ul {
 
 @media all and (max-width: 1200px) and (min-width: 900px) {
   body {
-    width: 823px;
+    width: 800px;
   }
   .cheevo-block {
     width: 267px;
@@ -176,7 +166,7 @@ ul {
 
 @media all and (max-width: 900px) and (min-width: 620px) {
   body {
-    width: 592px;
+    width: 570px;
     font-size: 14px;
   }
   .cheevo-block {
@@ -187,7 +177,7 @@ ul {
 
 @media all and (max-width: 620px) and (min-width: 400px) {
   body {
-    width: 397px;
+    width: 375px;
     font-size: 12px;
   }
   .cheevo-block {
