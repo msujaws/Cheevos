@@ -1,10 +1,22 @@
+html {
+  background-color: #fff;
+}
+
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   margin: 0 auto;
-  padding: 0;
+  padding: 10px;
   -moz-transition-time-function: ease;
   -moz-transition-duration: 500ms;
+}
+
+#wrapper {
+  position: relative;
+  text-align: center;
+  background-color: #ececec;
+  border: 1px solid #c6c6c6;
+  padding-bottom: 10px;
 }
 
 #cheevo-h1 {
@@ -15,19 +27,18 @@ body {
   margin-top: 0;
 }
 
-ul {
+#cheevo-h1,
+#cheevo-h2,
+#cheevo-message,
+.cheevo-block {
+  text-align: left;
+}
+
+#cheevo-blocks {
   margin: 0;
   padding: 0;
 }
 
-#wrapper{
-  background-color: #ECECEC;
-  position: relative;
-  padding-left:10px;
-  border: 1px solid #c6c6c6;
-}
-
-/*cheevo blocks*/
 .cheevo-block {
   vertical-align: top;
   -moz-box-sizing: border-box;
@@ -136,7 +147,7 @@ div.bronze, div.silver, div.gold {
 
 @media all and (min-width: 1200px) {
   body {
-    width: 1021px;
+    width: 1020px;
   }
   .cheevo-block {
     width: 250px;
@@ -146,7 +157,7 @@ div.bronze, div.silver, div.gold {
 
 @media all and (max-width: 1200px) and (min-width: 900px) {
   body {
-    width: 823px;
+    width: 800px;
   }
   .cheevo-block {
     width: 267px;
@@ -156,7 +167,7 @@ div.bronze, div.silver, div.gold {
 
 @media all and (max-width: 900px) and (min-width: 620px) {
   body {
-    width: 592px;
+    width: 570px;
     font-size: 14px;
   }
   .cheevo-block {
@@ -167,7 +178,7 @@ div.bronze, div.silver, div.gold {
 
 @media all and (max-width: 620px) and (min-width: 400px) {
   body {
-    width: 397px;
+    width: 375px;
     font-size: 12px;
   }
   .cheevo-block {
