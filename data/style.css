@@ -4,7 +4,7 @@ body {
   margin: 0 auto;
   padding: 0;
   -moz-transition-time-function: ease;
-  -moz-transition-duration: 1000ms;
+  -moz-transition-duration: 500ms;
 }
 
 #cheevo-h1 {
@@ -20,11 +20,10 @@ ul {
   padding: 0;
 }
 
-/*top bar */
-#top-bar {
+#wrapper{
   background-color: #ECECEC;
   position: relative;
-  padding: 0 0 5px 5px;
+  padding-left:10px;
   border: 1px solid #c6c6c6;
 }
 
@@ -137,7 +136,7 @@ div.bronze, div.silver, div.gold {
 
 @media all and (min-width: 1200px) {
   body {
-    width: 1000px;
+    width: 1021px;
   }
   .cheevo-block {
     width: 250px;
@@ -147,7 +146,7 @@ div.bronze, div.silver, div.gold {
 
 @media all and (max-width: 1200px) and (min-width: 900px) {
   body {
-    width: 801px;
+    width: 823px;
   }
   .cheevo-block {
     width: 267px;
@@ -157,7 +156,7 @@ div.bronze, div.silver, div.gold {
 
 @media all and (max-width: 900px) and (min-width: 620px) {
   body {
-    width: 570px;
+    width: 592px;
     font-size: 14px;
   }
   .cheevo-block {
@@ -168,7 +167,7 @@ div.bronze, div.silver, div.gold {
 
 @media all and (max-width: 620px) and (min-width: 400px) {
   body {
-    width: 375px;
+    width: 397px;
     font-size: 12px;
   }
   .cheevo-block {
@@ -185,5 +184,8 @@ div.bronze, div.silver, div.gold {
   .cheevo-block {
     display: block;
     min-height: 80px;
+  }
+  #wrapper{
+    padding-left:0px;
   }
 }
