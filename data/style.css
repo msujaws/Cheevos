@@ -70,8 +70,9 @@ ul {
   padding: 5px 12px;
   color: white;
   border-color: #2D53AF;
+  border-radius: 2.5px;
   background-repeat: no-repeat;
-  background-position: 90%;
+  background-position: -moz-calc(100% - 16px), center;
   background-image: url(tick.png),
                     -moz-linear-gradient(top,#5689DB 0%,#4D7BD6 100%);
 }
@@ -88,7 +89,6 @@ ul {
   background-image: -moz-linear-gradient(rgba(250, 250, 250, 1), rgba(255, 255, 255, 1) 50%),
                     -moz-linear-gradient(-moz-dialog, -moz-dialog);
 }
-
 
 .awards {
   list-style: none;
