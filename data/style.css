@@ -110,46 +110,34 @@ ul {
   float: right;
 }
 
-.achieved > div .bronze {
-  background: url(award_star_bronze_1.png) no-repeat right;
-}
-
-.achieved > div .silver {
-  background: url(award_star_silver_1.png) no-repeat right;
-}
-
-.achieved > div .gold {
-  background: url(award_star_gold_1.png) no-repeat right;
-}
-
-.unachieved > div .bronze {
-  background: gray;
-}
-.unachieved > div > .silver {
-  background: gray;
-}
-.unachieved > div > .gold {
-  background: gray;
-}
-
+.achieved > div .bronze,
+.unachieved > div .bronze,
+.awards-unachieved > ol > .bronze-achieved,
 .awards-unachieved > ol > .bronze-unachieved {
-  background: gray;
-}
-.awards-unachieved > ol > .silver-unachieved {
-  background: gray;
-}
-.awards-unachieved > ol > .gold-unachieved {
-  background: gray;
-}
-
-.awards-unachieved > ol > .bronze-achieved {
   background: url(award_star_bronze_1.png) no-repeat right;
 }
-.awards-unachieved > ol > .silver-achieved {
+
+.achieved > div .silver,
+.unachieved > div > .silver,
+.awards-unachieved > ol > .silver-achieved,
+.awards-unachieved > ol > .silver-unachieved {
   background: url(award_star_silver_1.png) no-repeat right;
 }
-.awards-unachieved > ol > .gold-achieved {
+
+.achieved > div .gold,
+.unachieved > div > .gold,
+.awards-unachieved > ol > .gold-achieved,
+.awards-unachieved > ol > .gold-unachieved {
   background: url(award_star_gold_1.png) no-repeat right;
+}
+
+.unachieved > div .bronze,
+.awards-unachieved > ol > .bronze-unachieved,
+.unachieved > div > .silver,
+.awards-unachieved > ol > .silver-unachieved,
+.unachieved > div > .gold,
+.awards-unachieved > ol > .gold-unachieved {
+  filter: url(cheevo.html#desaturate);
 }
 
 #twitterLink, .twitter-share-button {
