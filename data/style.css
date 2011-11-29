@@ -4,7 +4,7 @@ body {
   margin: 0 auto;
   padding: 0;
   -moz-transition-time-function: ease;
-  -moz-transition-duration: 1000ms;
+  -moz-transition-duration: 500ms;
 }
 
 #cheevo-h1 {
@@ -21,7 +21,7 @@ ul {
 }
 
 /*top bar */
-#top-bar {
+#wrapper{
   background-color: #ECECEC;
   position: relative;
   padding-left:10px;
@@ -156,7 +156,7 @@ ul {
 
 @media all and (min-width: 1200px) {
   body {
-    width: 1023px;
+    width: 1021px;
   }
   .cheevo-block {
     width: 250px;
@@ -205,7 +205,7 @@ ul {
     display: block;
     min-height: 80px;
   }
-  #top-bar{
+  #wrapper{
     padding-left:0px;
   }
 }
