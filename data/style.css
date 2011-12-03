@@ -95,13 +95,13 @@ body {
                     -moz-linear-gradient(-moz-dialog, -moz-dialog);
 }
 
-.awards {
+ol.awards {
   position: absolute;
   bottom: 5px;
   right: 5px;
 }
 
-.awards > li {
+ol.awards > li {
   display: inline-block;
 }
 
