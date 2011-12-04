@@ -7,7 +7,8 @@ html {
 }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Georgia, serif;
+  color: #333;
   font-size: 16px;
   margin: 0 auto;
   padding: 10px;
@@ -29,10 +30,13 @@ header {
 #cheevo-h1 {
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: normal;
 }
 
 #cheevo-h2 {
   margin-top: 0;
+  font-weight: normal;
+  font-style: italic;
 }
 
 #cheevo-message {
@@ -58,7 +62,6 @@ header {
   padding: 10px;
   background-color: rgba(255,255,255,0.3);
   display: inline-block;
-  color: silver;
   margin: 0;
   position: relative;
   -moz-transition-time-function: ease;
@@ -74,18 +77,17 @@ header {
 
 .message {
   padding: 5px 12px;
-  color: black;
   -moz-transition: background-color 200ms linear;
 }
 
 .cheevo-block > h3 {
   border-radius: 2.5px;
   padding: 5px 12px;
-  color: black;
+  font-weight: normal;
   border-color: #2D53AF;
   background-image: -moz-linear-gradient(center bottom , rgba(26, 26, 26, 2) 0px, transparent 0px),
                     -moz-linear-gradient(transparent, rgba(114, 114, 114, 0.1) 1px, rgba(81, 81, 81, 0.2) 80%),
-                    -moz-linear-gradient(rgb(207, 219, 236), rgb(207, 219, 236));
+                    -moz-linear-gradient(rgba(207, 219, 236,.4), rgba(207, 219, 236,.4));
 }
 
 .cheevo-block.achieved {
@@ -94,12 +96,12 @@ header {
 
 .achieved > h3 {
   padding: 5px 12px;
-  color: white;
+  color: #ddd;
   border-color: #2D53AF;
   background-repeat: no-repeat;
-  background-position: -moz-calc(100% - 16px), center;
+  background-position: -moz-calc(100% - 12px), center;
   background-image: url(tick.png),
-                    -moz-linear-gradient(top,#5689DB 0%,#4D7BD6 100%);
+                    -moz-linear-gradient(top, rgba(86,137,219,.8) 0%, rgba(77,123,214,.8) 100%);
 }
 
 .cheevo-block:not(.achieved):hover {
