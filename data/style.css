@@ -148,7 +148,11 @@ div.bronze, div.silver, div.gold {
   filter: none;
 }
 
-#twitterLink, .twitter-share-button {
+#twitterLink {
+  visibility: hidden;
+}
+
+.twitter-share-button {
   position: absolute;
   top: 10px;
   right: 10px;
