@@ -25,6 +25,7 @@ header {
   border-radius: 2.5px;
   margin-bottom: 10px;
   box-shadow: 0 0 10px #000;
+  min-height: 125px;
 }
 
 #cheevo-h1 {
