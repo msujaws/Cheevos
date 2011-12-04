@@ -16,3 +16,9 @@ AUTHORS:
 
 * Jared Wein <weinjared@gmail.com>
 * Matthew Wein <mwein2009@gmail.com>
+
+Special thanks to:
+
+* Stephen Horlander for the background of the Cheevo page <http://www.stephenhorlander.com>
+* famfamfam silk icons
+* mfayaz on deviantART for the hand-drawn Firefox logo on the Cheevo page <http://mfayaz.deviantart.com/art/FreeHand-ColorStroked-icon-pac-117362788>
