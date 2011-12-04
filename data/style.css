@@ -8,12 +8,11 @@ body {
   margin: 0 auto;
   padding: 10px;
   -moz-transition-time-function: ease;
-  -moz-transition-duration: 500ms;
+  -moz-transition-duration: 1000ms;
 }
 
 #wrapper {
   position: relative;
-  text-align: center;
   background-color: #ececec;
   border: 1px solid #c6c6c6;
   padding-bottom: 10px;
@@ -147,7 +146,7 @@ div.bronze, div.silver, div.gold {
 
 @media all and (min-width: 1200px) {
   body {
-    width: 1020px;
+    width: 1023px;
   }
   .cheevo-block {
     width: 250px;
