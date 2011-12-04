@@ -54,7 +54,8 @@ header {
 #cheevo-blocks {
   margin: 0;
   padding: 0;
-  text-align: center;
+  -moz-column-gap: 0;
+  -moz-column-count: 3;
 }
 
 .cheevo-block {
@@ -169,8 +170,8 @@ div.bronze, div.silver, div.gold {
     width: 1023px;
   }
   .cheevo-block {
-    width: 250px;
-    height: 155px;
+    width: 100%;
+    height: 198px;
   }
 }
 
@@ -179,7 +180,7 @@ div.bronze, div.silver, div.gold {
     width: 800px;
   }
   .cheevo-block {
-    width: 265px;
+    width: 100%;
     height: 164px;
   }
 }
@@ -189,8 +190,11 @@ div.bronze, div.silver, div.gold {
     width: 570px;
     font-size: 14px;
   }
+  #cheevo-blocks {
+    -moz-column-count: 2;
+  }
   .cheevo-block {
-    width: 285px;
+    width: 100%;
     height: 176px;
   }
 }
@@ -203,8 +207,11 @@ div.bronze, div.silver, div.gold {
     width: 375px;
     font-size: 12px;
   }
-  .cheevo-block {
-    width: 375px;
+  #cheevo-blocks {
+    -moz-column-count: 1;
+  }
+.cheevo-block {
+    width: 100%;
     min-height: 100px;
   }
 }
@@ -231,6 +238,7 @@ div.bronze, div.silver, div.gold {
     }
   #cheevo-blocks {
     margin-top: 160px;
+    -moz-column-count: auto;
   }
   .cheevo-block {
     display: block;
