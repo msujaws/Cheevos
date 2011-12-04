@@ -8,14 +8,15 @@ body {
   margin: 0 auto;
   padding: 10px;
   -moz-transition-time-function: ease;
-  -moz-transition-duration: 1000ms;
+  -moz-transition-duration: 700ms;
 }
 
 #wrapper {
   position: relative;
+  text-align: center;
   background-color: #ececec;
   border: 1px solid #c6c6c6;
-  padding-bottom: 10px;
+  padding:10px;
 }
 
 #cheevo-h1 {
@@ -27,8 +28,8 @@ body {
 }
 
 #cheevo-h1,
-#cheevo-h2,
 #cheevo-message,
+#cheevo-name,
 .cheevo-block {
   text-align: left;
 }
@@ -36,6 +37,7 @@ body {
 #cheevo-blocks {
   margin: 0;
   padding: 0;
+  text-align:left;
 }
 
 .cheevo-block {
@@ -156,7 +158,7 @@ div.bronze, div.silver, div.gold {
 
 @media all and (max-width: 1200px) and (min-width: 900px) {
   body {
-    width: 800px;
+    width: 824px;
   }
   .cheevo-block {
     width: 267px;
@@ -166,7 +168,7 @@ div.bronze, div.silver, div.gold {
 
 @media all and (max-width: 900px) and (min-width: 620px) {
   body {
-    width: 570px;
+    width: 593px;
     font-size: 14px;
   }
   .cheevo-block {
@@ -175,9 +177,9 @@ div.bronze, div.silver, div.gold {
   }
 }
 
-@media all and (max-width: 620px) and (min-width: 400px) {
+@media all and (max-width: 620px) and (min-width: 430px) {
   body {
-    width: 375px;
+    width: 398px;
     font-size: 12px;
   }
   .cheevo-block {
@@ -186,7 +188,7 @@ div.bronze, div.silver, div.gold {
   }
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 430px) {
   body {
     width: 100%;
     font-size: 12px;
