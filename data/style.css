@@ -69,6 +69,7 @@ body {
 }
 
 .cheevo-block > h3 {
+  border-radius: 2.5px;
   padding: 5px 12px;
   color: black;
   border-color: #2D53AF;
@@ -81,7 +82,6 @@ body {
   padding: 5px 12px;
   color: white;
   border-color: #2D53AF;
-  border-radius: 2.5px;
   background-repeat: no-repeat;
   background-position: -moz-calc(100% - 16px), center;
   background-image: url(tick.png),
@@ -96,13 +96,13 @@ body {
                     -moz-linear-gradient(-moz-dialog, -moz-dialog);
 }
 
-.awards {
+ol.awards {
   position: absolute;
   bottom: 5px;
   right: 5px;
 }
 
-.awards > li {
+ol.awards > li {
   display: inline-block;
 }
 
