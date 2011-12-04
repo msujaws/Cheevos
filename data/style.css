@@ -11,7 +11,7 @@ body {
   color: #333;
   font-size: 16px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 10px 10px 0;
   -moz-transition-time-function: ease;
   -moz-transition-duration: 1000ms;
 }
@@ -56,13 +56,14 @@ header {
   padding: 0;
   -moz-column-gap: 0;
   -moz-column-count: 3;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 2.5px;
 }
 
 .cheevo-block {
   vertical-align: top;
   -moz-box-sizing: border-box;
   padding: 10px;
-  background-color: rgba(255,255,255,0.3);
   display: inline-block;
   margin: 0;
   position: relative;
@@ -114,8 +115,10 @@ header {
 
 ol.awards {
   position: absolute;
-  bottom: 5px;
-  right: 5px;
+  bottom: 10px;
+  right: 10px;
+  max-height: 16px;
+  padding: 0;
 }
 
 ol.awards > li {
@@ -129,8 +132,8 @@ ol.awards > li {
 
 div.bronze, div.silver, div.gold {
   position: absolute;
-  bottom: 5px;
-  right: 5px;
+  bottom: 10px;
+  right: 10px;
 }
 
 .bronze {
@@ -243,8 +246,6 @@ div.bronze, div.silver, div.gold {
   .cheevo-block {
     display: block;
     min-height: 80px;
-  }
-  #wrapper{
-    padding-left:0px;
+    margin: 0;
   }
 }
