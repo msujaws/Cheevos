@@ -91,6 +91,7 @@ header {
   background-image: -moz-linear-gradient(center bottom , rgba(26, 26, 26, 2) 0px, transparent 0px),
                     -moz-linear-gradient(transparent, rgba(114, 114, 114, 0.1) 1px, rgba(81, 81, 81, 0.2) 80%),
                     -moz-linear-gradient(rgba(207, 219, 236,.4), rgba(207, 219, 236,.4));
+  margin-bottom: 0;
 }
 
 .cheevo-block.achieved {
@@ -111,6 +112,10 @@ header {
   -moz-transition-time-function: ease;
   -moz-transition-duration: 50ms;
   background-color: rgba(255,255,255,0.1);
+}
+
+.cheevo-block > p {
+  margin-top: 0;
 }
 
 ol.awards {
@@ -134,6 +139,17 @@ div.bronze, div.silver, div.gold {
   position: absolute;
   bottom: 10px;
   right: 10px;
+}
+
+.learnMore {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: block;
+}
+
+a {
+  color: #2D53AF;
 }
 
 .bronze {
