@@ -110,7 +110,7 @@ header {
 .cheevo-block:not(.achieved):hover {
   -moz-transition-time-function: ease;
   -moz-transition-duration: 50ms;
-  background-color: rgba(255,255,255,0.4);
+  background-color: rgba(255,255,255,0.1);
 }
 
 ol.awards {
