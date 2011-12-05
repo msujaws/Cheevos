@@ -10,6 +10,6 @@ function populateTemplate(name, description, title, cheevoBlocks) {
   document.getElementById("cheevo-message").textContent = unescape(description);
   document.getElementById("cheevo-blocks").innerHTML = unescape(cheevoBlocks);
   let twitterLink = document.getElementById("twitterLink");
-  twitterLink.setAttribute("data-text", twitterLink.getAttribute("data-text").replace("#1", unescape(name)));
+  twitterLink.setAttribute("data-text", title ? twitterLink.getAttribute("data-text").replace("#1", unescape(name)) : unescape(name));
   document.getElementById("twitterScript").src = 'https://platform.twitter.com/widgets.js';
 }
