@@ -88,14 +88,8 @@ header {
   padding: 5px 12px;
   font-weight: normal;
   border-color: #2D53AF;
-<<<<<<< HEAD
   background-image: -moz-radial-gradient(center center 45deg, ellipse contain, rgba(255,255,255,.3) 0%, rgba(255,255,255,.2) 100%);
-=======
-  background-image: -moz-linear-gradient(center bottom , rgba(26, 26, 26, 2) 0px, transparent 0px),
-                    -moz-linear-gradient(transparent, rgba(114, 114, 114, 0.1) 1px, rgba(81, 81, 81, 0.2) 80%),
-                    -moz-linear-gradient(rgba(207, 219, 236,.4), rgba(207, 219, 236,.4));
   margin-bottom: 0;
->>>>>>> upstream/master
 }
 
 .cheevo-block.achieved {
@@ -116,17 +110,12 @@ header {
 
 .cheevo-block:not(.achieved):hover {
   -moz-transition-time-function: ease;
-<<<<<<< HEAD
   -moz-transition-duration: 200ms;
   background-color: rgba(255,255,255,0.2);
-=======
-  -moz-transition-duration: 50ms;
-  background-color: rgba(255,255,255,0.1);
 }
 
 .cheevo-block > p {
   margin-top: 0;
->>>>>>> upstream/master
 }
 
 ol.awards {
