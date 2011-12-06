@@ -12,7 +12,7 @@ body {
   font-size: 16px;
   margin: 0 auto;
   padding: 10px 10px 0;
-  -moz-transition-time-function: ease;
+  -moz-transition-timing-function: ease;
   -moz-transition-duration: 1000ms;
 }
 
@@ -67,13 +67,13 @@ header {
   display: inline-block;
   margin: 0;
   position: relative;
-  -moz-transition-time-function: ease;
+  -moz-transition-timing-function: ease;
   -moz-transition-duration: 600ms;
 }
 
 .name {
   -moz-transition-delay: 400ms;
-  -moz-transition-time-function: ease;
+  -moz-transition-timing-function: ease;
   -moz-transition-duration: 200ms;
   margin-top: 0;
 }
@@ -109,7 +109,7 @@ header {
 }
 
 .cheevo-block:not(.achieved):hover {
-  -moz-transition-time-function: ease;
+  -moz-transition-timing-function: ease;
   -moz-transition-duration: 50ms;
   background-color: rgba(255,255,255,0.1);
 }
@@ -165,10 +165,8 @@ a {
 }
 
 .bronze, .silver, .gold {
-  filter: url(cheevo.html#desaturate);
+  filter: url(about:cheevos#desaturate);
 }
-
-.achieved,
 .achieved > :-moz-any(.bronze, .silver, .gold) {
   filter: none;
 }
