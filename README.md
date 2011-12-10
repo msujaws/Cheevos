@@ -17,6 +17,7 @@ AUTHORS:
 * Jared Wein <weinjared@gmail.com>
 * Matthew Wein <mwein2009@gmail.com>
 * Felipe Gomes <felipc@gmail.com>
+* Matt Noorenberghe
 
 Special thanks to:
 
