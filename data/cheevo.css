@@ -167,7 +167,7 @@ a {
 .bronze, .silver, .gold {
   filter: url(about:cheevos#desaturate);
 }
-.achieved > :-moz-any(.bronze, .silver, .gold) {
+.achieved, .achieved > :-moz-any(.bronze, .silver, .gold) {
   filter: none;
 }
 

@@ -1,0 +1,9 @@
+#cheevos-toolbarbutton {
+  -moz-box-orient: horizontal !important;
+}
+
+#cheevos-toolbarbutton > .toolbarbutton-text {
+  display: inline;
+  -moz-padding-end: 5px;
+  -moz-padding-start: 10px;
+}
