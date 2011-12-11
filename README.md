@@ -18,6 +18,7 @@ AUTHORS:
 * Matthew Wein <mwein2009@gmail.com>
 * Felipe Gomes <felipc@gmail.com>
 * Matt Noorenberghe
+* Stephen Horlander
 
 Special thanks to:
 
@@ -25,3 +26,4 @@ Special thanks to:
 * famfamfam silk icons
 * mfayaz on deviantART for the hand-drawn Firefox logo on the Cheevo page <http://mfayaz.deviantart.com/art/FreeHand-ColorStroked-icon-pac-117362788>
 * Gozala on github for the jetpack-protocol library <https://github.com/Gozala/jetpack-protocol>
+* Erik Vold on github for the toolbarbutton-jplib library <https://github.com/voldsoftware/toolbarbutton-jplib>
