@@ -7,3 +7,38 @@
   -moz-padding-end: 5px;
   -moz-padding-start: 10px;
 }
+
+#cheevos-achievementOverlay[hidden] {
+  opacity: 1;
+}
+
+#cheevos-achievementOverlay {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*opacity: 0;
+  -moz-transition: opacity 200ms linear 5s;*/
+}
+
+#cheevos-achievementOverlay > hbox {
+  width: 100%;
+}
+
+#cheevos-achievementOverlay-message {
+  pointer-events: auto;
+  background-color: #af4500;
+  color: #fff;
+  border-radius: 8px;
+  padding: 30px 50px;
+  box-shadow: 0 0 2px #fff;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 300px;
+  text-align: center;
+}
