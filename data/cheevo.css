@@ -55,7 +55,7 @@ header {
   margin: 0;
   padding: 0;
   -moz-column-gap: 0;
-  -moz-column-count: 3;
+  -moz-column-count: 1;
   background-color: rgba(255,255,255,0.3);
   border-radius: 2.5px;
 }
