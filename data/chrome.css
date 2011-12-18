@@ -22,10 +22,7 @@
 
 #cheevos-achievementOverlay-message {
   font: 12px Segoe UI, Helvetica, sans-serif;
-  background-color: #af4500;
   color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 2px #fff;
   position: absolute;
   bottom: 100px;
   left: 0;
@@ -52,6 +49,9 @@
   max-width: 500px;
   overflow: hidden;
   position: relative;
+  background: url(wood.png) center no-repeat;
+  border-radius: 8px;
+  box-shadow: 0 0 2px #ffa;
 }
 
 #cheevos-achievementOverlay-award {
