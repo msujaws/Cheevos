@@ -30,17 +30,17 @@
   margin: 0 auto;
   max-width: 500px;
   opacity: 1;
-  -moz-transition: opacity 2s linear 5s;
+  -moz-transition: opacity 2s linear 10s;
 }
 
 #cheevos-achievementOverlay[hidden] #cheevos-achievementOverlay-message {
   opacity: 0;
-  -moz-transition: opacity 2s linear 5s;
+  -moz-transition: opacity 2s linear 10s;
 }
 
 #cheevos-achievementOverlay[fadeOut] #cheevos-achievementOverlay-message {
   opacity: 0;
-  -moz-transition: opacity 2s linear 5s;
+  -moz-transition: opacity 2s linear 10s;
 }
 
 #cheevos-achievementOverlay-achievement {
