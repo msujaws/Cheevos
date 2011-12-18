@@ -21,18 +21,17 @@
 }
 
 #cheevos-achievementOverlay-message {
+  font: 12px Segoe UI, Helvetica, sans-serif;
   background-color: #af4500;
   color: #fff;
   border-radius: 8px;
-  padding: 30px 50px;
   box-shadow: 0 0 2px #fff;
   position: absolute;
   bottom: 100px;
   left: 0;
   right: 0;
   margin: 0 auto;
-  max-width: 300px;
-  text-align: center;
+  max-width: 500px;
   opacity: 1;
   -moz-transition: opacity 2s ease-out 10s;
 }
@@ -45,4 +44,64 @@
 #cheevos-achievementOverlay[fadeOut] #cheevos-achievementOverlay-message {
   opacity: 0;
   -moz-transition: opacity 2s ease-out 10s;
+}
+
+#cheevos-achievementOverlay-achievement {
+  background: #b2815a;
+  max-height: 100px;
+  max-width: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+#cheevos-achievementOverlay-award {
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+}
+
+#cheevos-achievementOverlay-h1, #cheevos-achievementOverlay-h2 {
+  color: white;
+  margin: 0;
+  font-weight: normal;
+}
+
+#cheevos-achievementOverlay-h1 {
+  padding-top: 20px;
+}
+
+#cheevos-achievementOverlay-h2 {
+  color: brown;
+  font-size: 100%;
+}
+
+#cheevos-achievementOverlay-meta {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  border-left: 1px solid #222;
+}
+
+#cheevos-achievementOverlay-points {
+  width: 50px;
+  height: 50px;
+  background-color: #e8d9b5;
+  margin: 10px 25px 0;
+  line-height: 50px;
+  text-align: center;
+}
+
+#cheevos-achievementOverlay-medals {
+  width: 100%;
+  text-align: center;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#cheevos-achievementOverlay-medals li {
+  display: inline;
 }
