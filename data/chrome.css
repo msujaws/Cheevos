@@ -30,17 +30,17 @@
   margin: 0 auto;
   max-width: 500px;
   opacity: 1;
-  -moz-transition: opacity 2s ease-out 10s;
+  -moz-transition: opacity 2s linear 5s;
 }
 
 #cheevos-achievementOverlay[hidden] #cheevos-achievementOverlay-message {
   opacity: 0;
-  -moz-transition: opacity 2s ease-out 10s;
+  -moz-transition: opacity 2s linear 5s;
 }
 
 #cheevos-achievementOverlay[fadeOut] #cheevos-achievementOverlay-message {
   opacity: 0;
-  -moz-transition: opacity 2s ease-out 10s;
+  -moz-transition: opacity 2s linear 5s;
 }
 
 #cheevos-achievementOverlay-achievement {
@@ -61,7 +61,7 @@
   height: 72px;
   margin: 14px;
   border-radius: 1000px;
-  border: 1px ridge #ffa;
+  border: 2px ridge gold;
   box-shadow: inset 0 0 3px #000,
               0 0 2px #ff6;
   background: url(generic_medal.png) no-repeat center;
@@ -107,7 +107,21 @@
   border-radius: 50px;
   box-shadow: inset 0 0 10px black,
               0 0 2px #ffa;
-  border: 2px ridge, #ff6;
+}
+
+#cheevos-achievementOverlay-meta.bronze #cheevos-achievementOverlay-points {
+  border: 2px ridge goldenrod;
+  color: goldenrod;
+}
+
+#cheevos-achievementOverlay-meta.silver #cheevos-achievementOverlay-points {
+  border: 2px ridge silver;
+  color: silver;
+}
+
+#cheevos-achievementOverlay-meta.gold #cheevos-achievementOverlay-points {
+  border: 2px ridge gold;
+  color: gold;
 }
 
 #cheevos-achievementOverlay-medals {
@@ -129,18 +143,18 @@
   background-position: center;
 }
 
-#cheevos-achievementOverlay-medals.gold li:nth-child(1),
-#cheevos-achievementOverlay-medals.silver li:nth-child(1),
-#cheevos-achievementOverlay-medals.bronze li:nth-child(1) {
+#cheevos-achievementOverlay-meta.gold li:nth-child(1),
+#cheevos-achievementOverlay-meta.silver li:nth-child(1),
+#cheevos-achievementOverlay-meta.bronze li:nth-child(1) {
   background-image: url(award_star_bronze_1.png);
 }
 
-#cheevos-achievementOverlay-medals.gold li:nth-child(2),
-#cheevos-achievementOverlay-medals.silver li:nth-child(2) {
+#cheevos-achievementOverlay-meta.gold li:nth-child(2),
+#cheevos-achievementOverlay-meta.silver li:nth-child(2) {
   background-image: url(award_star_silver_1.png);
 }
 
-#cheevos-achievementOverlay-medals.gold li:nth-child(3) {
+#cheevos-achievementOverlay-meta.gold li:nth-child(3) {
   background-image: url(award_star_gold_1.png);
 }
 
