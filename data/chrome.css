@@ -1,0 +1,153 @@
+#cheevos-toolbarbutton {
+  -moz-box-orient: horizontal !important;
+}
+
+#cheevos-toolbarbutton > .toolbarbutton-text {
+  display: inline;
+  -moz-padding-start: 3px;
+}
+
+#cheevos-achievementOverlay {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#cheevos-achievementOverlay > hbox {
+  width: 100%;
+}
+
+#cheevos-achievementOverlay-message {
+  font: 12px Segoe UI, Helvetica, sans-serif;
+  color: #fff;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 500px;
+  opacity: 1;
+  -moz-transition: opacity 2s ease-out 10s;
+}
+
+#cheevos-achievementOverlay[hidden] #cheevos-achievementOverlay-message {
+  opacity: 0;
+  -moz-transition: opacity 2s ease-out 10s;
+}
+
+#cheevos-achievementOverlay[fadeOut] #cheevos-achievementOverlay-message {
+  opacity: 0;
+  -moz-transition: opacity 2s ease-out 10s;
+}
+
+#cheevos-achievementOverlay-achievement {
+  background: #b2815a;
+  max-height: 100px;
+  max-width: 500px;
+  overflow: hidden;
+  position: relative;
+  background: url(wood.png) center no-repeat;
+  border-radius: 8px;
+  border: 1px solid #ffa;
+  box-shadow: 0 0 10px #000;
+}
+
+#cheevos-achievementOverlay-award {
+  float: left;
+  width: 72px;
+  height: 72px;
+  margin: 14px;
+  border-radius: 1000px;
+  border: 1px ridge #ffa;
+  box-shadow: inset 0 0 3px #000,
+              0 0 2px #ff6;
+  background: url(generic_medal.png) no-repeat center;
+}
+
+#cheevos-achievementOverlay-h1, #cheevos-achievementOverlay-h2 {
+  color: white;
+  margin: 0;
+  text-shadow: 0 0 2px #333;
+}
+
+#cheevos-achievementOverlay-h1 {
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+#cheevos-achievementOverlay-h2 {
+  color: #F0B289;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+#cheevos-achievementOverlay-meta {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  box-shadow: inset 0px 0px 50px black;
+}
+
+#cheevos-achievementOverlay-points {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(92,41,12,.5);
+  margin: 10px 25px 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 2px #333;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: inset 0 0 10px black,
+              0 0 2px #ffa;
+  border: 2px ridge, #ff6;
+}
+
+#cheevos-achievementOverlay-medals {
+  width: 100%;
+  text-align: center;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#cheevos-achievementOverlay-medals li {
+  display: inline-block;
+  min-width: 16px;
+  max-width: 16px;
+  min-height: 16px;
+  max-height: 16px;
+  margin: 0 3px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#cheevos-achievementOverlay-medals.gold li:nth-child(1),
+#cheevos-achievementOverlay-medals.silver li:nth-child(1),
+#cheevos-achievementOverlay-medals.bronze li:nth-child(1) {
+  background-image: url(award_star_bronze_1.png);
+}
+
+#cheevos-achievementOverlay-medals.gold li:nth-child(2),
+#cheevos-achievementOverlay-medals.silver li:nth-child(2) {
+  background-image: url(award_star_silver_1.png);
+}
+
+#cheevos-achievementOverlay-medals.gold li:nth-child(3) {
+  background-image: url(award_star_gold_1.png);
+}
+
+#cheevos-achievementOverlay-medals.bronze li:nth-child(2),
+#cheevos-achievementOverlay-medals.bronze li:nth-child(3),
+#cheevos-achievementOverlay-medals.silver li:nth-child(3) {
+  background-color: rgba(0,0,0,.5);
+  border-radius: 20px;
+  box-shadow: inset 0 0 3px #000;
+}

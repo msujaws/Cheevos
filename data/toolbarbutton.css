@@ -23,11 +23,6 @@
   -moz-transition: opacity 200ms linear 5s;*/
 }
 
-#cheevos-achievementOverlay {
-
-
-}
-
 #cheevos-achievementOverlay > hbox {
   width: 100%;
 }
