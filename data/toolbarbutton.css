@@ -23,6 +23,11 @@
   -moz-transition: opacity 200ms linear 5s;*/
 }
 
+#cheevos-achievementOverlay {
+
+
+}
+
 #cheevos-achievementOverlay > hbox {
   width: 100%;
 }
@@ -42,3 +47,5 @@
   max-width: 300px;
   text-align: center;
 }
+
+
