@@ -64,16 +64,18 @@
 #cheevos-achievementOverlay-h1, #cheevos-achievementOverlay-h2 {
   color: white;
   margin: 0;
-  font-weight: normal;
+  text-shadow: 0 0 2px #333;
 }
 
 #cheevos-achievementOverlay-h1 {
   padding-top: 20px;
+  font-weight: bold;
 }
 
 #cheevos-achievementOverlay-h2 {
-  color: brown;
+  color: #F0B289;
   font-size: 100%;
+  font-weight: normal;
 }
 
 #cheevos-achievementOverlay-meta {
@@ -82,7 +84,7 @@
   right: 0;
   width: 100px;
   height: 100%;
-  border-left: 1px solid #222;
+  box-shadow: inset 0px 0px 50px black;
 }
 
 #cheevos-achievementOverlay-points {
@@ -104,4 +106,19 @@
 
 #cheevos-achievementOverlay-medals li {
   display: inline;
+  padding: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#cheevos-achievementOverlay-medals li:nth-child(1) {
+  background-image: url(award_star_bronze_1.png);
+}
+
+#cheevos-achievementOverlay-medals li:nth-child(2) {
+  background-image: url(award_star_silver_1.png);
+}
+
+#cheevos-achievementOverlay-medals li:nth-child(3) {
+  background-image: url(award_star_gold_1.png);
 }
