@@ -4,23 +4,25 @@
 
 #cheevos-toolbarbutton > .toolbarbutton-text {
   display: inline;
-  -moz-padding-end: 5px;
-  -moz-padding-start: 10px;
-}
-
-#cheevos-achievementOverlay[hidden] {
-  opacity: 1;
+  -moz-padding-start: 3px;
 }
 
 #cheevos-achievementOverlay {
+  opacity: 1;
+}
+
+#cheevos-achievementOverlay:not([hidden]) {
   pointer-events: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  /*opacity: 0;
-  -moz-transition: opacity 200ms linear 5s;*/
+  opacity: 0.5;
+  -moz-transition-property: opacity !important;
+  -moz-transition-duration: 2s !important;
+  -moz-transition-timing-function: ease-out !important;
+  -moz-transition-delay: 0s !important;
 }
 
 #cheevos-achievementOverlay > hbox {
@@ -28,7 +30,6 @@
 }
 
 #cheevos-achievementOverlay-message {
-  pointer-events: auto;
   background-color: #af4500;
   color: #fff;
   border-radius: 8px;
