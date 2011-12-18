@@ -8,21 +8,12 @@
 }
 
 #cheevos-achievementOverlay {
-  opacity: 1;
-}
-
-#cheevos-achievementOverlay:not([hidden]) {
   pointer-events: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.5;
-  -moz-transition-property: opacity !important;
-  -moz-transition-duration: 2s !important;
-  -moz-transition-timing-function: ease-out !important;
-  -moz-transition-delay: 0s !important;
 }
 
 #cheevos-achievementOverlay > hbox {
@@ -42,4 +33,16 @@
   margin: 0 auto;
   max-width: 300px;
   text-align: center;
+  opacity: 1;
+  -moz-transition: opacity 2s ease-out 10s;
+}
+
+#cheevos-achievementOverlay[hidden] #cheevos-achievementOverlay-message {
+  opacity: 0;
+  -moz-transition: opacity 2s ease-out 10s;
+}
+
+#cheevos-achievementOverlay[fadeOut] #cheevos-achievementOverlay-message {
+  opacity: 0;
+  -moz-transition: opacity 2s ease-out 10s;
 }
