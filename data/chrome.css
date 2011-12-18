@@ -51,7 +51,8 @@
   position: relative;
   background: url(wood.png) center no-repeat;
   border-radius: 8px;
-  box-shadow: 0 0 2px #ffa;
+  border: 1px solid #ffa;
+  box-shadow: 0 0 10px #000;
 }
 
 #cheevos-achievementOverlay-award {
@@ -90,8 +91,12 @@
 #cheevos-achievementOverlay-points {
   width: 50px;
   height: 50px;
-  background-color: #5C290C;
+  background-color: rgba(92,41,12,.5);
   margin: 10px 25px 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 2px #333;
   line-height: 50px;
   text-align: center;
   border-radius: 50px;
