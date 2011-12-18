@@ -57,9 +57,14 @@
 
 #cheevos-achievementOverlay-award {
   float: left;
-  width: 80px;
-  height: 80px;
-  margin: 10px;
+  width: 72px;
+  height: 72px;
+  margin: 14px;
+  border-radius: 1000px;
+  border: 1px ridge #ffa;
+  box-shadow: inset 0 0 3px #000,
+              0 0 2px #ff6;
+  background: url(generic_medal.png) no-repeat center;
 }
 
 #cheevos-achievementOverlay-h1, #cheevos-achievementOverlay-h2 {
