@@ -1,11 +1,5 @@
 Cheevos is an early stage addon for Firefox that makes learning about different parts of the browser fun, as well as giving you the opportunity to brag to your friends about your pro-level web surfing. It contains:
 
-* A program (lib/main.js).
-* A few tests.
-* Some meager documentation.
-
-Patches welcome :)
-
 Technology used:
 
 * Mozilla Firefox Add-on SDK
@@ -19,6 +13,7 @@ AUTHORS:
 * Felipe Gomes <felipc@gmail.com>
 * Matt Noorenberghe
 * Stephen Horlander
+* ... and you too, patches are welcome :)
 
 Special thanks to:
 
