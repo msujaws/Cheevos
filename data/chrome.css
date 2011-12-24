@@ -44,7 +44,6 @@
 }
 
 #cheevos-achievementOverlay-achievement {
-  pointer-events: auto;
   max-height: 100px;
   max-width: 400px;
   overflow: hidden;
