@@ -10,10 +10,6 @@ function populateTemplate(name, description, title, cheevoBlocks, styleCss) {
   document.getElementById("cheevo-message").textContent = unescape(description);
   document.getElementById("cheevo-blocks").innerHTML = unescape(cheevoBlocks);
   document.getElementById("cheevo-stylesheet").href = unescape(styleCss);
-  document.getElementById("cheevo-resetLink").addEventListener("click", function() {
-    self.postMessage('resetCheevos');
-    window.location.reload(true);
-  }, false);
   let twitterLink = document.getElementById("twitterLink");
   twitterLink.setAttribute("data-text", title ? twitterLink.getAttribute("data-text").replace("#1", unescape(name)) : unescape(name));
   document.getElementById("twitterScript").src = 'https://platform.twitter.com/widgets.js';

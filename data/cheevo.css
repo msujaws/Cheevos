@@ -230,9 +230,6 @@ a {
     width: 100%;
     min-height: 100px;
   }
-  #cheevo-reset {
-    display: none;
-  }
 }
 
 @media all and (max-width: 400px) {
@@ -252,30 +249,4 @@ a {
     min-height: 80px;
     margin: 0;
   }
-  #cheevo-reset {
-    display: none;
-  }
-}
-
-#cheevo-reset {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 30px;
-  font: 12px Segoe UI, Helvetica, sans-serif;
-}
-
-#cheevo-reset a {
-  cursor: pointer;
-  color: rgba(0,0,0,.5);
-  text-decoration: none;
-  -moz-transition: color 200ms;
-}
-
-#cheevo-reset:hover a {
-  color: rgb(0,0,0);
-}
-
-#cheevo-reset a:hover {
-  text-decoration: underline;
 }
