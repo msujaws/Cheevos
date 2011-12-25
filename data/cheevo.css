@@ -180,6 +180,20 @@ a {
   right: 10px;
 }
 
+footer {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+footer > a {
+  margin: 0 20px;
+  color: #222;
+  text-decoration: none;
+}
+
+footer > a:hover {
+  text-decoration: underline;
+}
 
 @media all and (min-width: 1200px) {
   body {
