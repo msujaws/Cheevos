@@ -41,7 +41,10 @@ header {
 }
 
 #cheevo-message {
-  margin-top: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }
 
 #cheevo-h1,
