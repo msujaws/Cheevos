@@ -196,36 +196,3 @@
 #cheevos-achievementOverlay-meta.silver li:nth-child(3) {
   background-image: url(star-gold-empty.png);
 }
-
-/* Adds a hover shine effect, not sure how we should use this */
-/*#cheevos-achievementOverlay-achievement:before {
-  content: "";
-  z-index: 2;
-  position: absolute;
-  width: 900px;
-  height: 200px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-position: -400px -150px;
-  background-repeat: no-repeat;
-  background-image: -moz-linear-gradient(
-      -85deg,
-      rgba(255, 255, 255, 0.3) 0%,
-      rgba(255, 255, 255, 0.3) 49%,
-      rgba(255, 255, 255, 0.8) 49.5%,
-      rgba(255, 255, 255, 0.0) 50%
-  );
-  -moz-background-size: 500% 500%;
-  opacity: 0;
-  -moz-transition: background-position .5s ease 200ms,
-                   opacity 200ms ease 0s;
-}
-
-#cheevos-achievementOverlay-achievement:hover:before {
-  background-position: 0 0;
-  opacity: 1;
-  -moz-transition: background-position .5s ease 200ms,
-                   opacity 200ms ease 0s;
-}*/
