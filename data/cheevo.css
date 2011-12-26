@@ -23,7 +23,7 @@ header {
               -moz-radial-gradient(bottom center 45deg, ellipse cover, rgba(255,255,255,.4) 0%, rgba(255,255,255,.3) 100%);
   padding: 10px;
   border-radius: 2.5px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   box-shadow: 0 0 10px #000;
   min-height: 125px;
 }
@@ -54,22 +54,21 @@ header {
 #cheevo-blocks {
   margin: 0 0 10px;
   padding: 0;
-  -moz-column-count: 1;
+  -moz-column-gap: 0;
+  -moz-column-count: 3;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 2.5px;
 }
 
 .cheevo-block {
   vertical-align: top;
-  border-radius: 2.5px;
   -moz-box-sizing: border-box;
-  padding: 20px;
+  padding: 10px;
   display: inline-block;
   margin: 0;
   position: relative;
   -moz-transition-timing-function: ease;
   -moz-transition-duration: 600ms;
-  background-color: rgba(255,255,255,0.3);
-  box-shadow: 0 0 10px #000;
-  margin-bottom:25px;
 }
 
 .name {
@@ -86,11 +85,10 @@ header {
 
 .cheevo-block > h3 {
   border-radius: 2.5px;
-  color: #aaa;
-  padding: 10px 16px;
+  padding: 5px 12px;
   font-weight: normal;
-  border: 1px solid #AA8833;
-  -moz-box-shadow: inset 0 0 3px #111, inset 5px 8px 7px #111, inset 0 -20px 50px #111, 0 -1px 1px #777, inset 0 15px 10px #888;
+  border-color: #2D53AF;
+  background-image: -moz-radial-gradient(center center 45deg, ellipse contain, rgba(255,255,255,.3) 0%, rgba(255,255,255,.2) 100%);
   margin-bottom: 0;
 }
 
@@ -99,14 +97,13 @@ header {
 }
 
 .achieved > h3 {
-  padding: 10px 16px;
-  color: #fff;
-  border: 1px solid #5D81AB;
+  padding: 5px 12px;
+  color: #856D42;
+  text-shadow: 0 0 4px #E1763E;
   background-repeat: no-repeat;
-  background-position: -moz-calc(100% - 15px), center;
+  background-position: -moz-calc(100% - 12px), center;
   background-image: url(trophy_icon.png),
-  -moz-linear-gradient(top, #A9DB80 25%, #6e9150 100%);
-  box-shadow: 0px 2px 1px rgba(255,255,255,0.7) inset, 1px 1px 2px rgba(0,0,0,0.6);
+                    -moz-linear-gradient(top, rgba(255,241,181,.8) 25%, rgba(228,199,127,.8) 100%)
 }
 
 .cheevo-block > p {
@@ -202,7 +199,7 @@ footer > a:hover {
   }
   .cheevo-block {
     width: 100%;
-    height: 300px;
+    height: 198px;
   }
 }
 
@@ -212,7 +209,7 @@ footer > a:hover {
   }
   .cheevo-block {
     width: 100%;
-    height: 275px;
+    height: 164px;
   }
 }
 
@@ -221,10 +218,12 @@ footer > a:hover {
     width: 593px;
     font-size: 14px;
   }
-
+  #cheevo-blocks {
+    -moz-column-count: 2;
+  }
   .cheevo-block {
     width: 100%;
-    height: 250px;
+    height: 176px;
   }
 }
 
@@ -236,9 +235,12 @@ footer > a:hover {
     width: 398px;
     font-size: 12px;
   }
-.cheevo-block {
+  #cheevo-blocks {
+    -moz-column-count: 1;
+  }
+  .cheevo-block {
     width: 100%;
-    min-height: 225px;
+    min-height: 100px;
   }
 }
 
@@ -251,8 +253,12 @@ footer > a:hover {
     font-size: 12px;
     padding: 0;
   }
+  #cheevo-blocks {
+    -moz-column-count: auto;
+  }
   .cheevo-block {
     display: block;
-    min-height: 180px;
+    min-height: 80px;
+    margin: 0;
   }
 }
