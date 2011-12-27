@@ -52,7 +52,6 @@
                     -moz-linear-gradient(#a65d29, #591d09);
   border-radius: 3px;
   border: 1px solid #ff6;
-  /*box-shadow: 0 0 30px #ff6;*/
   -moz-animation-name: achievementGlow;
   -moz-animation-duration: 2s;
   -moz-animation-iteration-count: infinite;
