@@ -1,12 +1,3 @@
-#cheevos-toolbarbutton {
-  -moz-box-orient: horizontal !important;
-}
-
-#cheevos-toolbarbutton > .toolbarbutton-text {
-  display: inline;
-  -moz-padding-start: 3px;
-}
-
 #cheevos-achievementOverlay {
   pointer-events: none;
   position: fixed;
