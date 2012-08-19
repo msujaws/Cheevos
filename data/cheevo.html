@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <head>
-<link rel="stylesheet" id="cheevo-stylesheet" />
-<link rel="icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADP0lEQVR42oWSe0hTYRjG14WSyn0nNSu6QP1TZIVJRhej5i1Mc4na1NlNh4qVucqypBsWlgujUcustbI2ijK1YQgbXcw27eIls5qEZdbZzjYvy53j2dx8OydcFHT54wcfPO/zfO/3vS9nVtC4nygyMR7DNYZahiYGnGXkXDui8X71cOQZWABDMUPblQzseneretD6scFpt3S43LQV3IME2E2tLnOHxtn1QjnI1jC1jxnUDAmc0nTszPs6BTnY3+2+e3SF+dvnR24HUQd0932gPiiAfCcF8u1ZIN9IwPr8sPtyhg9uNUiG8JYDDsUOfyNHloY1k+Ymlyp/kfmiyBfHX5U6nV0qoAwXf5gGmo/At+d7wa7Lhk/qJKd0G/ZEKZ5pNtwIpW8XzDVzSjZjdzp1MrqyKMpanIquvX1wkKINUrC3noCBl/lg0++C/joR2B6mQosinJKkIsXl7GmmTlWYSybyNXKOCFCc8lCwhXhX45SmTzM+uZJiI1uYWxv3QH99FvQ92go9tZvAWs0HjSTIdkqI5G3qSKp6/5z+wmSUx/7k+EMJSKyVxdnatFJSvifAbNPthIGnIujVpIBFHQeWivXwpTwUZFnTiRppYJ++JJA6LkBXGe9ENmBU4AovLD8endGXC+01F/h97cpox4BWAETlBsBVEUCU86DhxGJHmXi2uU25ii5KnmzM4XPZcY72zHPMtijvhQXxmOarPtdRnje/p7cyGkw3w+DLpRD4fG4ZXMqaYf1QG04XCf1MObHcRMYzlvX+ukhj9/HR6frzIXZJ+kzi6clACpethO6SYNDmzaNyN6BbjaVrqGOCKcb48Elcj++3Tdy+jrsgJwZJkiO8NxYm+xMdRUHDLIUpUwlhhHdsbgwqy4jihrDP/mPASFteonVo2e5o7PXr00td7+XhLvYcunqCD6t5Wv9bAGdXFLZkX5yf8dndGLKrgj/89UHScFVpok0c62dktEi25p8BWZHYuWf3EqkefSZYtELo1YmA6pJBu66MZjTVfwPSwjBp/XU+iWuShqBTDGAsAIvh8FB7fTGdJ5hnYvSp/wzYtIa7XLgWybfwUENaKIazbOVhzZt5qCppLeJ7PtDDd6JR1S9cWTApAAAAAElFTkSuQmCC" />
-<title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" id="cheevo-stylesheet" />
+  <link rel="icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADP0lEQVR42oWSe0hTYRjG14WSyn0nNSu6QP1TZIVJRhej5i1Mc4na1NlNh4qVucqypBsWlgujUcustbI2ijK1YQgbXcw27eIls5qEZdbZzjYvy53j2dx8OydcFHT54wcfPO/zfO/3vS9nVtC4nygyMR7DNYZahiYGnGXkXDui8X71cOQZWABDMUPblQzseneretD6scFpt3S43LQV3IME2E2tLnOHxtn1QjnI1jC1jxnUDAmc0nTszPs6BTnY3+2+e3SF+dvnR24HUQd0932gPiiAfCcF8u1ZIN9IwPr8sPtyhg9uNUiG8JYDDsUOfyNHloY1k+Ymlyp/kfmiyBfHX5U6nV0qoAwXf5gGmo/At+d7wa7Lhk/qJKd0G/ZEKZ5pNtwIpW8XzDVzSjZjdzp1MrqyKMpanIquvX1wkKINUrC3noCBl/lg0++C/joR2B6mQosinJKkIsXl7GmmTlWYSybyNXKOCFCc8lCwhXhX45SmTzM+uZJiI1uYWxv3QH99FvQ92go9tZvAWs0HjSTIdkqI5G3qSKp6/5z+wmSUx/7k+EMJSKyVxdnatFJSvifAbNPthIGnIujVpIBFHQeWivXwpTwUZFnTiRppYJ++JJA6LkBXGe9ENmBU4AovLD8endGXC+01F/h97cpox4BWAETlBsBVEUCU86DhxGJHmXi2uU25ii5KnmzM4XPZcY72zHPMtijvhQXxmOarPtdRnje/p7cyGkw3w+DLpRD4fG4ZXMqaYf1QG04XCf1MObHcRMYzlvX+ukhj9/HR6frzIXZJ+kzi6clACpethO6SYNDmzaNyN6BbjaVrqGOCKcb48Elcj++3Tdy+jrsgJwZJkiO8NxYm+xMdRUHDLIUpUwlhhHdsbgwqy4jihrDP/mPASFteonVo2e5o7PXr00td7+XhLvYcunqCD6t5Wv9bAGdXFLZkX5yf8dndGLKrgj/89UHScFVpok0c62dktEi25p8BWZHYuWf3EqkefSZYtELo1YmA6pJBu66MZjTVfwPSwjBp/XU+iWuShqBTDGAsAIvh8FB7fTGdJ5hnYvSp/wzYtIa7XLgWybfwUENaKIazbOVhzZt5qCppLeJ7PtDDd6JR1S9cWTApAAAAAElFTkSuQmCC" />
+  <title></title>
+</head>
 <body>
-<div id="wrapper">
-  <header>
-    <h1 id="cheevo-h1"></h1>
-    <h2 id="cheevo-h2"></h2>
-    <p id="cheevo-message"></p>
-    <a href="https://twitter.com/share" id="twitterLink" class="twitter-share-button" data-url="http://msuja.ws/cheevos" data-text="" data-count="none" data-via="weinjared">Tweet</a><script type="text/javascript" id="twitterScript"></script>
-  </header>
-  <ul id="cheevo-blocks"></ul>
-</div>
-<footer>
-  <a href="http://msuja.ws/cheevos" id="addOnHomepageLink"></a>
-  <a href="https://github.com/msujaws/Cheevos/issues" id="supportLink"></a>
-  <a href="http://msuja.ws/" id="authorHomepageLink"></a>
-</footer>
+  <div id="wrapper">
+    <header>
+      <h1 id="cheevo-h1"></h1>
+      <h2 id="cheevo-h2"></h2>
+      <p id="cheevo-message"></p>
+      <a href="https://twitter.com/share" id="twitterLink" class="twitter-share-button" data-url="http://msuja.ws/cheevos" data-text="" data-count="none" data-via="weinjared">Tweet</a><script type="text/javascript" id="twitterScript"></script>
+    </header>
+    <ul id="cheevo-blocks"></ul>
+  </div>
+  <footer>
+    <a href="http://msuja.ws/cheevos" id="addOnHomepageLink"></a>
+    <a href="https://github.com/msujaws/Cheevos/issues" id="supportLink"></a>
+    <a href="http://msuja.ws/" id="authorHomepageLink"></a>
+  </footer>
+</body>

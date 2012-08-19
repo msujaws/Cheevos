@@ -3,6 +3,9 @@
 const { Loader } = require('test-harness/loader');
 const { data } = require('self');
 const tabs = require('tabs');
+const windowUtils = require("window-utils");
+
+function $(id) windowUtils.activeBrowserWindow.document.getElementById(id);
 
 exports.testStylesheetIsRegistered = function(test) {
   let loader = Loader(module);
@@ -29,5 +32,23 @@ exports.testAboutCheevos = function(test) {
       // end test
       tab.close(test.done());
     }
+  });
+};
+
+exports.testIconGenerator = function(test) {
+  test.waitUntilDone();
+  let loader = Loader(module);
+  loader.require('main');
+  let {generate} = loader.require('icon-generator');
+  generate({
+    onReady: function({icon}) {
+      test.assertEqual($('cheevos-toolbarbutton').image, icon, 'the image is correct');
+
+      loader.unload();
+
+      // end test
+      test.done();
+    },
+    text: '5'
   });
 };
