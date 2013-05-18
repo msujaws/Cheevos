@@ -5,8 +5,9 @@
     "fullName": "Cheevos",
     "permissions": {"private-browsing": true},
     "icon": "cheevos-toolbar-24x24.png",
+    "icon64": "logo-64x64.png",
     "id": "jid1-bpzDizt9E1R7nw",
     "name": "cheevos",
     "license": "MPL 1.1/GPL 2.0/LGPL 2.1",
-    "version": "1.4"
+    "version": "1.5"
 }
