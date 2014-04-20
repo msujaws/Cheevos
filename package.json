@@ -1,6 +1,6 @@
 {
     "author": "Jared Wein",
-    "dependencies": ["addon-kit", "api-utils", "about", "toolbarbutton", "vold-utils", "userstyles"],
+    "dependencies": ["addon-kit", "api-utils", "pathfinder"],
     "description": "Cheevos is an addon for Firefox that makes learning about different parts of the browser fun, as well as giving you the opportunity to brag to your friends about your pro-level web surfing.",
     "fullName": "Cheevos",
     "permissions": {"private-browsing": true},
